@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main_div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #79b9e0;
+  background-image: linear-gradient(222deg, #79b9e0 0%, #114079 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.child_div {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+figcaption {
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+}
+
+.addItem {
+  width: 100%;
+}
+
+input {
+  border: none;
+  width: 100%;
+  height: 20px;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 20px 17px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 15px -5px white;
+  outline: none;
+  border-radius: 5px;
+}
+
+.fa-add:before,
+.fa-plus:before {
+  content: "\2b";
+  position: absolute;
+  bottom: 24rem;
+  right: 40.5%;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  color: #002c63;
+}
+
+.showItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.eachItem {
+  width: 100%;
+  width: 100%;
+  height: 40px;
+  /* border: 2px solid white; */
+  background-color: #002c63;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0px 20px;
+  margin-top: 5px;
+  border-radius: 8px;
+  transition: 0.6s all ease;
+}
+
+
+.eachItem:hover {
+  background-color: white;
+  color: black;
+}
+
+.deleteBtn {
+  font-size: 17px;
+}
+
+.eachItem:hover .deleteBtn {
+  color: rgb(231, 97, 97);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+.deleteAllBtn {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #002c63;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #002c63;
+}
+
+button,
+button span {
+  transition: 200ms;
+}
+
+button .text {
+  transform: translateX(20px);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+button .icon {
+  position: absolute;
+  border-left: 1px solid wheat;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button svg {
+  width: 15px;
+  fill: #eee;
+}
+
+button:hover {
+  background: #ff3636;
+}
+
+button:hover .text {
+  color: transparent;
+}
+
+button:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active .icon svg {
+  transform: scale(0.8);
+}
+
+
+
+@media (min-width:500px) and (max-width:990px) {
+
+  .fa-add:before,
+  .fa-plus:before {
+    content: "\2b";
+    position: absolute;
+    bottom: 60%;
+    right: 37%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width:270px) and (max-width:851px) {
+
+  .fa-add:before,
+  .fa-plus:before {
+    content: "\2b";
+    position: absolute;
+    bottom: 56.5%;
+    right: 19%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width:768px) and (max-width:1224px) {
+
+  .fa-add:before,
+  .fa-plus:before {
+    content: "\2b";
+    position: absolute;
+    bottom: 58.9%;
+    right: 37%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width:1224px) and (max-width:1300px) {
+
+  .fa-add:before,
+  .fa-plus:before {
+    content: "\2b";
+    position: absolute;
+    bottom: 56.9%;
+    right: 39%;
+    cursor: pointer;
+  }
+}
