@@ -10,7 +10,7 @@ const App = () => {
   // Add Items
   const addItem = () => {
     if (!inputData) {
-
+    setItems([]);
     }
     else {
       setItems([...Items, inputData]);
